@@ -1,0 +1,43 @@
+@use './var' as *;
+@use './mixins' as *;
+/*--------------------------------------------------------------
+   Hero
+--------------------------------------------------------------*/
+.hero {
+  height: 100vh;
+  background: #fbd062;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+  padding-top: 95px;
+
+  @include media-breakpoint-down("md") {
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: 60px;
+  }
+
+  &-inner {
+    padding-top: 80px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.01em;
+    color: #111430;
+    @include media-breakpoint-down("md") {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #000;
+    margin-bottom: 30px;
+  }
+}

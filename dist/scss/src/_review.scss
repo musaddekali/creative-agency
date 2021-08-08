@@ -1,0 +1,40 @@
+@use './var' as *;
+@use './mixins' as *;
+/*--------------------------------------------------------------
+  Review
+--------------------------------------------------------------*/
+.review {
+  &-inner {
+    padding: 20px 5px 0 20px;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    p {
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.005em;
+      margin-top: 15px;
+      color: #707070;
+    }
+  }
+
+  &-img {
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  &-title {
+    margin-left: 15px;
+    margin-top: 2px;
+    h5 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+    h6 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

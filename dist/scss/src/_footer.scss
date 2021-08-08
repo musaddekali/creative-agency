@@ -1,0 +1,28 @@
+@use './var' as *;
+@use './mixins' as *;
+/*--------------------------------------------------------------
+  Footer
+--------------------------------------------------------------*/
+.footer{
+    background: $accent-color;
+    padding-top: 65px;
+    &-details{
+        h4{
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 43px;
+            letter-spacing: .396px;
+            color: #2d2d2d;
+            margin-bottom: 30px;
+        }
+    }
+    &-form{
+        .form-group{
+            margin-bottom: 1rem;
+        }
+        .form-control{
+            padding: 18px 15px;
+            border: 0;
+        }
+    }
+}

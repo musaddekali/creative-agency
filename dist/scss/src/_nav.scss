@@ -1,0 +1,15 @@
+@use './var' as *;
+@use './mixins' as *;
+
+.fixed-top{
+    background:$accent-color;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #000;
+    font-weight: 400;
+}
+.nav-link, .btn-brand{
+    padding: 10px 20px !important;
+}
+

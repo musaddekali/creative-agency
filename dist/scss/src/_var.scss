@@ -1,0 +1,32 @@
+$primary-color: hsl(234, 48%, 13%);
+$secondary-color: hsl(98, 37%, 52%);
+$accent-color: hsl(43, 95%, 68%);
+$clr-section-header: hsl(0, 0%, 18%);
+$white: hsl(0, 0%, 100%);
+$dark: hsl(0, 0%, 0%);
+
+$gutter: 1rem !default;
+
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+
+$breakpoints-up: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1440px,
+);
+
+$breakpoints-down: (
+  'xs': 575px,
+  'sm': 767px,
+  'md': 991px,
+  'lg': 1199px,
+  'xl': 1439px,
+);
+
+
+$box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.1);

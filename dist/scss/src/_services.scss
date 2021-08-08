@@ -1,0 +1,47 @@
+@use './var' as *;
+@use './mixins' as *;
+/*--------------------------------------------------------------
+   Services
+--------------------------------------------------------------*/
+.services{
+    padding-bottom: 90px;
+    &-details{
+        border-radius: 10px;
+        background: $white;
+        padding: 35px 0;
+        transition: all 0.3s;
+        margin-bottom: 20px;
+
+        &:hover {
+            box-shadow: 0 4px 80px rgb(0 0 0 / 10%);
+        }
+
+        &:hover > img{
+            transform: scale(1.1) rotate(360deg);
+        }
+    }
+
+    img{
+        height: 75px;
+        transform: scale(.9) rotate(0deg);
+        transition: all 0.5s;
+    }
+
+    h4{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 16px;
+        letter-spacing: .396px;
+        color: $primary-color;
+        margin: 20px 0;
+    }
+    p{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: .396px;
+        color: transparentize($dark, .3);
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

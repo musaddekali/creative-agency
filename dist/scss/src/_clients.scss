@@ -1,0 +1,19 @@
+@use './var' as *;
+@use './mixins' as *;
+
+.clients {
+  img {
+    height: 40px;
+    margin-bottom: 30px;
+    padding-right: 80px;
+    transform: scale(0.9);
+    @include transition-ease;
+    &:hover{
+      transform: scale(1);
+    }
+    @include media-breakpoint-down("sm") {
+      height: 35px;
+      padding-right: 20px;
+    }
+  }
+}
